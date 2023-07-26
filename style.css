@@ -1,0 +1,22 @@
+body{
+	padding: 0;
+	margin: 0
+}
+.container{
+	position: absolute;
+	width: 90%;
+	transform: translate(0,-50%);
+	top: 50%;
+	font-family: 'poppins',sans-serif;
+
+}
+h4{
+	writing-mode: vertical-lr;
+	display: inline;
+	background-color: black;
+	color: yellow;
+	padding: 15px;
+	word-spacing: 2px;
+	transform: rotate(180deg);
+	letter-spacing: 1.2px;
+}
