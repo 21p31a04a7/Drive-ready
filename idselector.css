@@ -1,0 +1,11 @@
+#notonlynumbers123{
+ 	border: 2px dashed green;
+ 	background-color: rgb(60, 179, 113);
+ 	color:rgb(100, 100, 100);
+ 	text-align: center;
+ 	font-size: 50px;
+ 	font-family: cursive;
+ 	text-transform: lowercase;
+ 	font-weight: bold;
+ 	font-variant: small-caps;
+ }
