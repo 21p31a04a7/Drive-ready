@@ -1,0 +1,61 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+div{
+	width: 400px;
+border-image: linear-gradient(firebrick, orange) 27/ 35px;
+outline: solid brown;
+outline: 8px ridge rgb(145, 39, 81);
+}		
+
+	</style>
+</head>
+<body>
+<div>This is a div with a border image<br> and three lines of text<br> making it much bigger than the original image<br>
+</div>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.abc {
+
+  position: relative;
+  font-size: 15px;
+  font-family: initial;
+  z-index:1;
+  left:200px;
+  top:100px;
+}
+
+.abc:before {
+  z-index:-1;
+  content:"";
+  position: absolute;
+  /*border-image:linear-gradient(firebrick, orange) 27/ 35px;
+outline: solid brown;*/
+
+
+  background: radial-gradient(circle at 0 0, transparent 10%, firebrick  calc(10%)) top left, radial-gradient(circle at 100% 0, transparent 10%, firebrick calc(10%)) top right, radial-gradient(circle at 0 100%, transparent 10%, firebrick calc(10%)) bottom left, radial-gradient(circle at 100% 100%, transparent 10%, firebrick calc(10%)) bottom right;
+/*border: radial-gradient(circle at 0 0, transparent 10%, orange  calc(10%)) top left, radial-gradient(circle at 100% 0, transparent 10%, orange calc(10%)) top right, radial-gradient(circle at 0 100%, transparent 10%, orange calc(10%)) bottom left, radial-gradient(circle at 100% 100%, transparent 10%, orange calc(10%)) bottom right dashed red;*/
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 200px;
+  left:-40px;
+  top: -45px;
+  
+}
+</style>
+</head>
+<body>
+  <div class="abc">
+  
+      <p><center>This is a div with a border image<br>and three lines of text<br>making it much bigger than the original image</center></p>
+    
+  </div>
+</body>
+</html>
