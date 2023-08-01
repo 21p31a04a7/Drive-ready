@@ -1,0 +1,17 @@
+p{
+	color: rgb(100,100,100);
+	font-family: cursive;
+
+}
+h3,b,span{
+	color: rgb(255,65,43);
+	font-family: italic;
+	font-size: 50px;
+
+}
+u{
+	border: 20px dashed rgb(255,0,0);
+	font-size: 30px;
+	font-style: italic;
+
+}

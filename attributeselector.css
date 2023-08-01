@@ -1,0 +1,23 @@
+input[type]{
+	color: yellow
+}
+input[type="text"]{
+	color: red
+	height:100px;
+	width: 190px;
+}
+input[type="number"]{
+	color: pink
+}
+a[href]{
+	background-color: blue;
+	font-family:cursive;
+	font-style: bold;
+	font-size: 50px;
+}
+img[src]{
+	font-family: cursive;
+	background-color: yellow;
+	font-size: 50px;
+	color: red;
+}
