@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>query Selector</h1>
+<h2>ALL</h2>
+<h1>H1</h1>
+<h2>H2</h2>
+<h3>H3</h3>
+<div>A div element</div>
+<p> a pa element with a <span style="color:brown;">span</span>element inside</p>
+<script type="text/javascript">
+	const nodelist=document.querySelectorAll("h2,div,span");
+	for (var i = 0; i < nodelist.length; i++) {
+		nodelist[i].style.backgroundColor="red";
+	}
+</script>
+
+</body>
+</html>

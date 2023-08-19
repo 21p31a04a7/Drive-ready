@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ </head>
+ <body>
+ <script type="text/javascript">
+ 	// keyword functionname(arg1,arg2,.....argn){
+ 	// 	statements
+ 	// 	return --optional
+ 	// }
+ 	// normal funtion with no arguments
+ 	function  test(){
+ 		document.write("test");
+ 	}
+     // test()
+    //function with one argument
+    function getname(name){
+    	document.write(name)
+    } 
+    // getname('swapan'+' ')
+    // var id = prompt("scan your id please")
+    function getid(idd){
+    	document.write(idd)
+    }
+    // getid(id)
+    // function with 2 arguments
+    // function sum(num1=0,num2=0){
+    // 	document.write(num1+num2)
+
+    // }
+    // sum()
+    // function sumofnum(num1=0,num2=0){
+    // 	document.write(num1+num2)
+
+    // }
+    // sumofnum(10,20)
+    // function cube(n){
+    // 	document.write(n**3)
+
+    // }
+    // cube(30)
+    //anonymous function is function without having function name
+    // var output = function(num){
+    // 	return(num*10)
+    // }
+    // document.write(output(4))
+    //arrow functions with two argument
+    //no function keyword
+    //after funtion name use =
+    //after parathesis use =>
+    // mul=(num1,num2)=>{
+    // 	document.write(num1*num2);
+    // }
+    // mul(3,2)
+    //arrow functon with one argument
+    // getid=rollno=>{
+    // 	document.write(rollno)
+    // }
+    // getid(12345)
+    //arrow function with no argument () or _
+
+    // test=_ =>{
+    // 	document.write('swapna...')
+    // }
+    // test()
+    //settimeout fun
+    //callback function is a function as an argument inside the another function
+    setTimeout(test1,2000)
+    function test1(){
+    	document.write("swapna"+' ')
+    }
+    setTimeout(test2,3000)
+    function test2(){
+    	document.write("bharathi"+' ')
+    }   
+    setTimeout(test3,4000)
+    function test3(){
+    	document.write("Lalli")
+    }
+ </script>
+ </body>
+ </html>
