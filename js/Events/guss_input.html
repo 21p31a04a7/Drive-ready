@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#container{
+			background-color: pink;
+			width: 30%;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<label>Enter the value to start the game:</label>
+	<input type="text" id="txtnum" value=" 0"/><br>
+	<input type="button" value="play" onclick="play()"/>
+		<input type="button" value="reset" onclick="reset()"/>
+    <span id="spnres"></span>
+</div>
+<script type="text/javascript">
+	function play()
+	{
+		var unum=parseInt(document.getElementById("txtnum").value);
+		var rnum=parseInt((Math.random()*10)+1);
+		if(unum==rnum){
+			document.getElementById("spnres").innerHTML="You won!";
+		}
+		
+		else{
+		
+			document.getElementById('spnres').innerHTML="You lost! The number is" +rnum;		
+	}
+}
+	function reset(){
+		document.getElementById('txtnum').value="0";
+		document.getElementById('spnres').innerHTML="";
+	}
+</script>
+</body>
+</html>

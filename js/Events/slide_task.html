@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0"> -->
+	<title>Image Slider</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="slider">
+		<ul>
+			<li>
+				<img src=
+"1.jpg"
+					alt="GFG Image 1">
+				
+			</li>
+			<li>
+				<img src=
+"2.jpg"
+					alt="GFG Image 2">
+				
+			</li>
+			<li>
+				<img src=
+"3.jpg"
+					alt="GFG Image 3">
+				
+			</li>
+			<li>
+				<img src=
+"4.jpg"
+					alt="GFG Image 4">
+				
+			</li>
+			<li>
+				<img src=
+"5.jpg"
+					alt="GFG Image 4">
+				
+			</li>
+		</ul>
+	</div>
+	<div id="aa">
+		<button id="a"><</button>
+	</div>
+	<div id="bb">
+		<button id="b">></button>
+	</div>
+</body>
+<script type="text/javascript">
+	const slider = document.querySelector('.slider');
+const slides = slider.querySelectorAll('li');
+const slideCount = slides.length;
+let activeSlide = 0;
+setInterval(() => {
+	slides[activeSlide].classList.remove('active');
+	activeSlide++;
+	if (activeSlide === slideCount) {
+		activeSlide = 0;
+	}
+	slides[activeSlide].classList.add('active');
+}, 2000);
+let bt=document.getElementByclassName('.slider')
+	bt.addEventListener("click",setInterval)
+
+</script>
+</html>

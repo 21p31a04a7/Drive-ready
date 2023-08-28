@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#pic1{
+height: 500px;
+width: 500px;
+margin-left: 300px;
+		}
+		
+	</style>
+</head>
+<body>
+<img src="6.jpg" id="pic1" onmouseover="setnewimage()" onmouseout="setoldimage()" width="200px"/>
+
+<script type="text/javascript">
+	function setnewimage(){
+     document.getElementById("pic1").src="7.jpg";
+
+	} 
+	function setoldimage(){
+		document.getElementById("pic1").src="6.jpg";
+	}
+</script>
+</body>
+</html>

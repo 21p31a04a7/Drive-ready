@@ -1,0 +1,48 @@
+.slider {
+    width: 100%;
+    position: relative;
+}
+ #aa{
+    position: relative;
+    top: 200px;
+
+ }
+ #bb{
+    position: relative;
+    top: 200px;
+    left: 980px;
+ }
+.slider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.slider li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+  
+img {
+    height: 500px;
+    width: 1000px;
+}
+  
+.slider li.active {
+    opacity: 1;
+}
+  
+.slider .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}

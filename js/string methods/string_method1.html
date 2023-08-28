@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border="1" cellspacing="0">
+		<tr>
+			<td>d</td>
+			<td>r</td>
+			<td>i</td>
+			<td>v</td>
+			<td>e</td>
+			<td>&nbsp</td>
+			<td>r</td>
+			<td>e</td>
+			<td>a</td>
+			<td>d</td>
+            <td>y</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			
+		</tr>
+		<tr>
+			<td>-11</td>
+			<td>-10</td>
+			<td>-9</td>
+			<td>-8</td>
+			<td>-7</td>
+			<td>-6</td>
+			<td>-5</td>
+			<td>-4</td>
+			<td>-3</td>
+			<td>-2</td>
+			<td>-1</td>
+			
+		</tr>
+	</table>
+<script type="text/javascript">
+	let str='drive ready';
+	function ss(str_nm) {
+		document.write("<b>"+str_nm+"</b><br>");
+	}
+	ss(str)
+	ss(str.length)
+	ss("string length="+str[3])
+	ss("string length="+str.length) 
+	//char at method
+	ss("chat at method="+str.charAt(3))
+	//indexof method
+	ss("index of="+str.indexOf('e'))
+	ss("last index of="+str.lastIndexOf('e'))
+	//trim method
+	let str1='  swapna  ';
+	ss("trim method="+str1.trim())
+	//toLowerCase
+	let str2='SWApna'
+	ss("to lower case="+str2.toLowerCase())
+	//toUpperCase
+	ss("to upper  case="+str2.toUpperCase())
+	//concate
+	let str3='swa';
+	let str4='pna';
+	let str5='hi'
+	ss("conate="+str3.concat(str4,str5));
+	let str6='fsd batch traniee';
+	ss("include method="+str6.includes('batch'));
+	let str7='swapna bharathi';
+	// console.log(str7.split());
+	let str8='swa&pna';
+	console.log(str8.split('&'));
+	//startwith =>bool
+	ss("start="+str7.startsWith('s'))//swapna bharathi
+	//endswith
+	ss("end="+str7.endsWith('p'))//swapna bharathi
+	ss("end="+str7.endsWith('i '))//swapna bharathi
+    //slice
+    ss("slice ="+str.slice(1,4))
+</script>
+</body>
+</html>

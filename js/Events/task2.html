@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		button{
+			height: 30px;
+			width: 100px;
+			background-color: gray;
+			border: 2px solid red;
+			border-radius: 10px;
+
+		}
+	</style>
+</head>
+<body>
+<center>
+<button onclick="incrbyone()">Next</button>
+<button onclick="decrbyone()">Prev</button>
+<p id="output_id">
+<img src="1.jpg" style="width: 300px;height: 300px"></p>
+</center>
+<script type="text/javascript">
+	var i=0;
+	function incrbyone(){
+    if (i<5){
+    	var res=++i
+		document.getElementById('output_id').innerHTML="<img src='"+res+".jpg' style='width:300px;height:300px;'>";
+	  }
+    }
+	function decrbyone(){
+		if (i>1){
+			var res=--i
+		document.getElementById('output_id').innerHTML="<img src='"+res+".jpg' style='width:300px;height:300px;'>";
+	  }
+    }
+</script>
+</body>
+</html>

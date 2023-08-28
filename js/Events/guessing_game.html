@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#container{
+			background-color: pink;
+			height: 200px;
+			width: 400px;
+			padding: 10px;
+			margin-left: 450px;
+		}
+		h1{
+			text-align: center;
+			font-family: cursive;
+			font-size: 30px;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Guess The Number</h1>
+<div id="container">
+	<label>Select an integer number between 0 to 9:</label><br>
+	<input type="radio" value="Number" name="s" id="txtnum"><label>0</label>
+	<input type="radio" value="Number" name="s" id="txtnum"><label>1</label>
+	<input type="radio" value="Number" name="s" id="txtnum"><label>2</label>
+	<input type="radio" value="Number" name="s" id="txtnum"><label>3</label>
+	<input type="radio" value="Number" name="s" id="txtnum"><label>4</label>
+	<input type="radio" value="Number" name="s" id="txtnum"><label>5</label>
+
+	<input type="radio" value="Number" name="s" id="txtnum"><label>6</label>
+	<input type="radio" value="Number" name="s" id="txtnum"><label>7</label>
+	<input type="radio" value="Number" name="s" id="txtnum"><label>8</label>
+	<input type="radio" value="Number" name="s" id="txtnum"><label>9</label>
+<br><br>
+<input type="text" value="random number" id="ran">
+<br>
+<br>
+	<input type="button" value="play" onclick="play()" />
+	<span id="spnres"></span>
+</div>
+<script type="text/javascript">
+    
+    
+	function play(){
+	var unum=parseInt(document.getElementById("txtnum").value);
+	var rnum=parseInt((Math.random()*10)+1);
+
+	 var a=document.getElementById('ran').value=rnum;
+	if(unum==rnum){
+		document.getElementById("spnres").innerHTML="You Won!";
+	}
+	else{
+        document.getElementById("spnres").innerHTML="You Lost!";
+
+	}
+}
+</script>
+</body>
+</html>

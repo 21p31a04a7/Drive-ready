@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border="2">
+<thead>
+	<th>Course name</th>
+	<th>Course number</th>
+	<th>Course fee</th>
+	<th>Place</th></thead>
+<tbody id="b"></tbody>
+
+</table>
+<script type="text/javascript">
+	
+       let Course=[
+       {
+       	'name':'html',
+       	'cno':'22425',
+       	'fees':'2452',
+       	'place':'dwp'
+       },
+       {
+       	'name':'html',
+       	'cno':'22425',
+       	'fees':'2452',
+       	'place':'dwp'
+       },
+       {
+       	'name':'html',
+       	'cno':'22425',       	
+       	'fees':'2452',
+       	'place':'dwp',
+       }
+       ]
+       for (i=0;i<Course.length;i++){
+       	let tr = document.createElement('tr');
+       	let td1 = document.createElement('td')
+       	let td2 = document.createElement('td')
+        let td3 = document.createElement('td')
+        let td4 = document.createElement('td')
+       	td1.innerText=Course[i].name
+       	td2.innerText=Course[i].cno
+       	td3.innerText=Course[i].fees
+       	td4.innerText=Course[i].place
+       	tr.append(td1)
+       	tr.append(td2)
+       	tr.append(td3)
+       	tr.append(td4)
+       	document.getElementById('b').append(tr)
+       }
+</script>
+</body>
+</html>

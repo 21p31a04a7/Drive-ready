@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task</title>
+</head>
+<body>
+<button id=btn_id>show</button>
+<button id="btn_2">hide</button>
+<img src="1pic.png" id="h">
+<!-- <h5 id="h">swapna</h5> -->
+<script type="text/javascript">
+	let bt1=document.getElementById('btn_id')
+	let bt=document.getElementById('btn_2')
+	bt1.onmouseover=function(){
+		let b=document.getElementById('h')
+		// b.style.color='blue'
+		// b.style.fontSize="30px"
+		// b.style.background='gray'
+		b .style.display='block'
+		
+	}
+	bt.onmouseover=function(){
+		let a = document.getElementById('h')
+		a.style.display='none'
+	}
+	
+	
+</script>
+</body>
+</html>
